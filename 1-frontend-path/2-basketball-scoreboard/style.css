@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #1B244A ;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box-title { 
+    font-family: "Montserrat", sans-serif;
+    color: #EEEEEE;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.score {
+    width: 150px;
+    height: 150px;
+    background-color: #080001;
+
+
+    font-family: "Audiowide", sans-serif;
+    color: #F94F6D;
+    font-size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pts-container {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-family: "Audiowide", sans-serif;
+    font-size: 0.8rem;
+    border: 1px solid #9AABD8;
+    color: #9AABD8;
+    background-color: #1B244A;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9AABD8;
+    color: #EEEEEE;
+}
+
+#new-game {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 100%;
+}
