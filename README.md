@@ -4,9 +4,7 @@
 - Amazon product page
 - Web agency hero
 
-## Javascript
--
-
 ## Frontend Path
 - Homepage (HTML & JS)
 - Basketball scoreboard (JS)
+- Password generatod (JS)
