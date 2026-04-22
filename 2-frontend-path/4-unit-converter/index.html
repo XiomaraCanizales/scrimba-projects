@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <main>
+        <section id="input-number">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" name="number" id="number" value="20">
+            <button type="button" id="convertBtn">Convert</button>
+            <div class="errorMsg"></div>
+        </section>
+        <section id="results">
+            <div>
+                <p>Length (Meter/Feet)</p>
+                <output id="meter" name="meter" for="number">0</output>
+            </div>
+            <div>
+                <p>Volume (Liters/Gallons)</p>
+                <output id="volume" name="volume" for="number">0</output>
+            </div>
+            <div>
+                <p>Mass (Kilograms/Pounds)</p>
+                <output id="mass" name="mass" for="number">0</output>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

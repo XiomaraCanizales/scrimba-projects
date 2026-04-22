@@ -1,0 +1,140 @@
+:root {
+    --white: #fff;
+    --bg-top: #6943ff;
+    --bg-bottom: #1f2937;
+    --output-box: #273549;
+    --purple: #ccc1ff;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+main {
+    width: 550px;
+    height: 730px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-number, #results {
+    padding: 2rem;
+}
+
+#input-number {
+    background-color: var(--bg-top);
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    width: 100%;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#number {
+    background-color: var(--bg-top);
+    border: 1px solid var(--purple);
+    border-radius: 5px;
+    width: 117px;
+    height: 83px;
+    font-size: 58px;
+    font-weight: 800;
+    color: var(--white);
+    text-align: center;
+}
+
+#convertBtn {
+    background-color: var(--white);
+    width: 117px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    color: #3d3d3d;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 1px 1px 5px 1px #1f293775;
+}
+
+#convertBtn:hover {
+    background-color: var(--purple);
+}
+
+#results {
+    background-color: var(--bg-bottom);
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#results div {
+    background-color: var(--output-box);
+    padding: 2rem;
+    text-align: center;
+}
+
+p {
+    color: var(--purple);
+    font-size: 20px;
+    margin-bottom: 9px;
+    font-weight: 600;
+}
+
+output {
+    color: var(--white);
+    font-size: 14px;
+}
